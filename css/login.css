@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+        url(/images/bkg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Ngăn chặn thanh cuộn */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative; /* Needed for absolute positioning */
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* 🔹 Password warning inside input box */
+.password-warning {
+    position: absolute;
+    top: 70%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.4); /* Slightly blurred text */
+    font-size: 14px;
+    pointer-events: none; /* Prevent user interaction */
+    transition: opacity 0.3s ease;
+}
+
+/* 🔹 Hide warning when user types OR input is valid */
+input:focus + .password-warning,
+input:valid + .password-warning {
+    opacity: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285f4;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+#error-message {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+.choice-label {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  

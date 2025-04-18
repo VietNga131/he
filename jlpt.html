@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng học tiếng Nhật</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/jlpt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Học Tiếng Nhật</h2>
+            <ul>
+                <li id="home" onclick="navigate('index.html')">
+                    <span class="material-symbols-outlined menu-icon">home</span> Trang chủ
+                </li>
+                <li id="dictionary" onclick="navigate('dictionary.html')">
+                    <span class="material-symbols-outlined menu-icon">translate</span> Tra từ
+                </li>
+                <li id="flashcard" onclick="navigate('flashcard.html')">
+                    <span class="material-symbols-outlined menu-icon">cards_star</span> Flashcard
+                </li>
+                <li id="jlpt" class="active" onclick="navigate('jlpt.html')">
+                    <span class="material-symbols-outlined menu-icon">text_snippet</span> Đề thi JLPT
+                </li>
+                <li id="chatbot" onclick="navigate('chatbot.html')">
+                    <span class="material-symbols-outlined menu-icon">robot_2</span> Chatbot
+                </li>
+            </ul>
+        </aside>        
+
+        <!-- Khung đăng nhập -->
+        <header class="user-box">
+            <button id="login-btn" onclick="window.location.href='/login'">Đăng nhập</button>
+            <img id="user-avatar" src="default-avatar.png" alt="Avatar" style="display: none;">
+        </header> 
+
+        <main class="content">
+            <h1>Đề thi JLPT</h1>
+
+
+            <!-- Các nút chọn đề -->
+            <div class="test-selector">
+                <button onclick="loadTest('test_N3_0724.json')">ĐỀ N3 07/2024</button>
+                <button onclick="loadTest('test_N3_1223.json')">ĐỀ N3 12/2023</button>
+            </div>
+            
+            <div id="test-container"></div>   
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

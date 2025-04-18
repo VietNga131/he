@@ -1,0 +1,55 @@
+<!-- File: public/flashcard.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard học từ vựng</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
+</head>
+<body>
+  <div class="container">
+      <aside class="sidebar">
+          <h2>Học Tiếng Nhật</h2>
+          <ul>
+              <li id="home" onclick="navigate('index.html')">
+                  <span class="material-symbols-outlined menu-icon">home</span> Trang chủ
+              </li>
+              <li id="dictionary" onclick="navigate('dictionary.html')">
+                  <span class="material-symbols-outlined menu-icon">translate</span> Tra từ
+              </li>
+              <li id="flashcard" class="active" onclick="navigate('flashcard.html')">
+                  <span class="material-symbols-outlined menu-icon">cards_star</span> Flashcard
+              </li>
+              <li id="jlpt" onclick="navigate('jlpt.html')">
+                  <span class="material-symbols-outlined menu-icon">text_snippet</span> Đề thi JLPT
+              </li>
+              <li id="chatbot" onclick="navigate('chatbot.html')">
+                  <span class="material-symbols-outlined menu-icon">robot_2</span> Chatbot
+              </li>
+          </ul>
+      </aside>
+
+      <!-- Khung đăng nhập -->
+      <header class="user-box">
+          <button id="login-btn" onclick="window.location.href='/login'">Đăng nhập</button>
+          <img id="user-avatar" src="default-avatar.png" alt="Avatar" style="display: none;">
+      </header> 
+
+      <main class="content">
+          <section id="flashcardSection">
+              <h1>Flashcard học từ vựng</h1>
+              <div id="flashcardContainer">
+                  <!-- Nội dung flashcard sẽ được load ở đây thông qua flashcard.js -->
+                  <p>Đang tải flashcard...</p>
+              </div>
+          </section>
+      </main>
+  </div>
+  <script src="flashcard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

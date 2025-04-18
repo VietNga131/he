@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng học tiếng Nhật</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Học Tiếng Nhật</h2>
+            <ul>
+                <li id="home" class="active" onclick="navigate('index.html')">
+                    <span class="material-symbols-outlined menu-icon">home</span> Trang chủ
+                </li>
+                <li id="dictionary" onclick="navigate('dictionary.html')">
+                    <span class="material-symbols-outlined menu-icon">translate</span> Tra từ
+                </li>
+                <li id="flashcard" onclick="navigate('flashcard.html')">
+                    <span class="material-symbols-outlined menu-icon">cards_star</span> Flashcard
+                </li>
+                <li id="jlpt" onclick="navigate('jlpt.html')">
+                    <span class="material-symbols-outlined menu-icon">text_snippet</span> Đề thi JLPT
+                </li>
+                <li id="chatbot" onclick="navigate('chatbot.html')">
+                    <span class="material-symbols-outlined menu-icon">robot_2</span> Chatbot
+                </li>
+            </ul>
+        </aside>
+
+        <header class="user-box">
+            <button id="login-btn" onclick="window.location.href='/login'">Đăng nhập</button>
+            <img id="user-avatar" src="default-avatar.png" alt="Avatar" style="display: none;">
+        </header> 
+
+        <main class="content">
+            <h1>Chào mừng bạn đến với ứng dụng học tiếng Nhật!</h1>
+            <p>Tra từ điển, ôn tập flashcard, luyện thi JLPT và trò chuyện với chatbot thông minh.</p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
