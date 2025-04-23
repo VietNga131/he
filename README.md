@@ -25,3 +25,7 @@ CREATE TABLE flashcards (
     pass_count INT DEFAULT 0      -- Số lần pass liên tục
 );
 
+ALTER TABLE flashcards ADD COLUMN is_active TINYINT(1) DEFAULT 1;
+ALTER TABLE flashcards ADD COLUMN sort_order INT DEFAULT 0;
+ALTER TABLE flashcards ADD COLUMN fail_count INT DEFAULT 0;
+

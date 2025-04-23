@@ -1,0 +1,83 @@
+#flashcardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 50%;
+    height: 220px;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+  
+.card p {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+  
+.card-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+  
+.card-actions button#showAnswerBtn {
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+
+.card-actions button#passBtn,
+.card-actions button#failBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #D9DDE8;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.card-actions button#passBtn:hover,
+.card-actions button#failBtn:hover {
+    background-color: #F0F0F0;
+}
+
+.card-actions button span.material-symbols-outlined {
+    font-size: 40px;
+}
+
+.card-actions button#passBtn span.material-symbols-outlined {
+    color: #18AE79;
+}
+  
+.card-actions button#failBtn span.material-symbols-outlined{
+    color: #d32f2f;
+}
+
+/* ===== Style cho bảng thống kê ===== */
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.summary-table th,
+.summary-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.summary-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}

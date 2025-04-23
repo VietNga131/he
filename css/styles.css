@@ -23,8 +23,8 @@
 
 .sidebar h2 {
     text-align: center; 
-    font-family: 'Mansalva';
-    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
     color: white;
 }
 
@@ -74,40 +74,57 @@
 
 /* Khung đăng nhập */
 header {
-    background: #f5f5f5;
+    background: #E8F0FE;
     color: black;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 20px;
 }
 
-button {
-    padding: 10px;
+#userIcon {
+    font-size: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
     border: none;
-    background: #3E67D6;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background: #3252AC;
-    cursor: pointer;
-}
-
-.user-box img {
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
+    background: rgb(180, 214, 255);
+}
+
+.user-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 120px;
+}
+
+.dropdown-menu div {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-menu div:hover {
+    background-color: #f0f0f0;
 }
 
 /* Nội dung chính */
 .content {
-    background-color: #f5f5f5;
+    background-color: #E8F0FE;
     padding: 20px;
     max-width: 100vw;
     overflow-x: auto;
@@ -135,6 +152,21 @@ button:hover {
   .question-block {
     margin: 15px 0;
   }
+
+  button {
+    padding: 10px;
+    border: none;
+    background: #3E67D6;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #3252AC;
+    cursor: pointer;
+}
 
 
 

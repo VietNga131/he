@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ứng dụng học tiếng Nhật</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/chatbot.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -36,12 +36,18 @@
 
         <!-- Khung đăng nhập -->
         <header class="user-box">
-            <button id="login-btn" onclick="window.location.href='/login'">Đăng nhập</button>
-            <img id="user-avatar" src="default-avatar.png" alt="Avatar" style="display: none;">
-        </header>        
+            <h2>Chatbot</h2>
+            <div class="user-dropdown">
+                <span class="material-symbols-outlined user-icon" id="userIcon">account_circle</span>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div id="logoutBtn">Đăng xuất</div>
+                </div>
+            </div>
+        </header>
 
         <main class="content">
-            <h1>Chatbot học tiếng Nhật</h1>
+            
+           
               
                 <div class="chat-container">
                   
@@ -52,9 +58,13 @@
                   </div>
                 </div>
               
+              
+            
+
         </main>
     </div>
 
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>

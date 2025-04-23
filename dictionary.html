@@ -6,9 +6,8 @@
     <title>Ứng dụng học tiếng Nhật</title>
     <link rel="stylesheet" href="css/dictionary.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
     <div class="container">
@@ -35,12 +34,16 @@
 
         <!-- Khung đăng nhập -->
         <header class="user-box">
-            <button id="login-btn" onclick="window.location.href='/login'">Đăng nhập</button>
-            <img id="user-avatar" src="default-avatar.png" alt="Avatar" style="display: none;">
-        </header> 
+            <h2>Tra từ</h2>
+            <div class="user-dropdown">
+                <span class="material-symbols-outlined user-icon" id="userIcon">account_circle</span>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div id="logoutBtn">Đăng xuất</div>
+                </div>
+            </div>
+        </header>
 
         <main class="content">
-            <h1>Từ điển tiếng Nhật</h1>
             <div class="search-box">
                 <button id="searchBtn">
                     <span class="material-symbols-outlined search-icon">search</span>

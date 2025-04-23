@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ứng dụng học tiếng Nhật</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/jlpt.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
     <div class="container">
@@ -35,12 +34,16 @@
 
         <!-- Khung đăng nhập -->
         <header class="user-box">
-            <button id="login-btn" onclick="window.location.href='/login'">Đăng nhập</button>
-            <img id="user-avatar" src="default-avatar.png" alt="Avatar" style="display: none;">
-        </header> 
+            <h2>JLPT</h2>
+            <div class="user-dropdown">
+                <span class="material-symbols-outlined user-icon" id="userIcon">account_circle</span>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div id="logoutBtn">Đăng xuất</div>
+                </div>
+            </div>
+        </header>
 
         <main class="content">
-            <h1>Đề thi JLPT</h1>
 
 
             <!-- Các nút chọn đề -->
@@ -54,5 +57,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="jlpt.js"></script>
 </body>
 </html>
